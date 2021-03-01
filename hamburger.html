@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id=overflow>  
-    <div id=overflowDEUX></div>    
-        <header id="chapeau" class="sticky">
-            <button onclick="myFunction('rubriqueUn')" class="hover">Bienvenue !</button>
-            <p> ,    ,   ,   ,    ,   ,   ,    ,   , ,   ,    ,  ,    ,   </p>
-        </header>
-        <div id="rubriqueUn" class="section"></div>
-        <div id="salade" class="sticky"><button onclick="myFunction('rubriqueDeux')">mon parcours</button></div>
-        <div id="rubriqueDeux" class="section"></div>
-        <div id="tomate" class="sticky"><button onclick="myFunction('rubriqueTrois')">mes compétences</button></div>
-        <div id="rubriqueTrois" class="section"></div>
-        <div id="fromage" class="sticky"><button onclick="myFunction('rubriqueQuatre')">mes réalisations</button></div>
-        <div id="rubriqueQuatre" class="section"></div>
-        <div id="viande" class="sticky"><button onclick="myFunction('rubriqueCinq')">me contacter</button></div>
-        <div id="rubriqueCinq" class="section"></div>
-        <div id="saladeDeux" class="sticky"><button onclick="myFunction('rubriqueSix')">liens</button></div> 
-        <div id="rubriqueSix" class="section"></div>
-        <footer id="base" class="sticky"><button>fin</button></footer>
-        <div class="sectionBlock"></div>
-    </div>  
-</body>
-<script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="overflow">
+      <div id="overflowDEUX"></div>
+      <header id="chapeau" class="sticky">
+        <button class="collapse hover">Bienvenue !</button>
+        <p>, , , , , , , , , , , , , ,</p>
+      </header>
+      <div id="bienvenue" class="section"></div>
+      <div id="salade" class="sticky">
+        <button class="collapse">Parcours</button>
+      </div>
+      <div id="parcours" class="section"></div>
+      <div id="tomate" class="sticky">
+        <button class="collapse">Compétences</button>
+      </div>
+      <div id="competences" class="section"></div>
+      <div id="fromage" class="sticky">
+        <button class="collapse">Réalisations</button>
+      </div>
+      <div id="realisations" class="section"></div>
+      <div id="viande" class="sticky">
+        <button class="collapse">Contact</button>
+      </div>
+      <div id="contact" class="section"></div>
+      <div id="saladeDeux" class="sticky">
+        <button class="collapse">Liens</button>
+      </div>
+      <div id="liens" class="section"></div>
+      <footer id="base" class="sticky"><button>Fin</button></footer>
+      <div class="sectionBlock"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>
-

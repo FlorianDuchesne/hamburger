@@ -1,176 +1,197 @@
-*{
-    box-sizing: border-box;
-    margin:auto;
-    /* display: flex;
+* {
+  box-sizing: border-box;
+  margin: auto;
+  /* display: flex;
     flex-direction: column;
     justify-content: center; */
 }
 
-#overflow{
-    background-color:turquoise;
-    width: 100%;
-    position: sticky;
-    height: 100%;
-    z-index: 2;
-    top: 0;
+@font-face {
+  font-family: "Pacifico";
+  src: url(../../typos_glyphes_etc/Pacifico/Pacifico-Regular.ttf);
 }
 
-#overflowDEUX{
-    background-color:turquoise;
-    width: 100%;
-    position: sticky;
-    height: 50px;
-    z-index: 5;
-    top: 0;
+body {
+  background: rgb(62, 224, 207);
+  background: linear-gradient(
+    180deg,
+    rgba(62, 224, 207, 1) 0%,
+    rgba(138, 43, 226, 1) 100%
+  );
 }
 
-#chapeau{
-    background-color: gold;
-    width: 50%;
-    height: 150px;
-    border-radius: 100% 100% 10px 10px;
-    margin-top: 2em;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    align-content: space-around;
-    top: 0;
-    z-index: 10;
+#overflow {
+  /* background-color: #3ee0cf; */
+  width: 100%;
+  position: sticky;
+  height: 100%;
+  z-index: 2;
+  top: 0;
 }
 
-#base{
-    background-color: gold;
-    width: 50%;
-    height: 50px;
-    border-radius: 10px;
-    top:280px;
-    z-index: 10;
+#overflowDEUX {
+  /* background-color: turquoise; */
+  width: 100%;
+  position: sticky;
+  height: 50px;
+  z-index: 5;
+  top: 0;
 }
 
-#salade, #saladeDeux{
-    background-color: greenyellow;
-    width: 45%;
-    height: 10px;
-    transition: 1s;
-    top:150px;
-    z-index: 10;
+#chapeau {
+  background-color: gold;
+  width: 50%;
+  height: 150px;
+  border-radius: 100% 100% 10px 10px;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: space-around;
+  top: 0;
+  z-index: 10;
 }
 
-#salade:hover, #saladeDeux:hover{
-    height: 50px;
+#base {
+  background-color: gold;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  top: 280px;
+  z-index: 10;
 }
 
-#tomate{
-    background-color:tomato;
-    width: 45%;
-    height: 20px;
-    transition: 1s;
-    top:160px;
-    z-index: 10;
+#salade,
+#saladeDeux {
+  background-color: greenyellow;
+  width: 45%;
+  height: 10px;
+  transition: 1s;
+  top: 150px;
+  z-index: 10;
 }
 
-#tomate:hover{
-    height: 50px;
+#salade:hover,
+#saladeDeux:hover {
+  height: 50px;
 }
 
-#fromage{
-    background-color:yellow;
-    width: 45%;
-    height: 10px;
-    transition: 1s;
-    top:180px;
-    z-index: 10;
+#tomate {
+  background-color: tomato;
+  width: 45%;
+  height: 20px;
+  transition: 1s;
+  top: 160px;
+  z-index: 10;
 }
 
-#fromage:hover{
-    height: 50px;
+#tomate:hover {
+  height: 50px;
 }
 
-#viande{
-    background-color: saddlebrown;
-    width: 45%;
-    height: 80px;
-    border-radius: 10px;
-    top:190px;
-    z-index: 10;
+#fromage {
+  background-color: yellow;
+  width: 45%;
+  height: 10px;
+  transition: 1s;
+  top: 180px;
+  z-index: 10;
 }
 
-#saladeDeux{
-top: 270px;
-z-index: 10;
+#fromage:hover {
+  height: 50px;
 }
 
-header p{
-    color: rgb(255, 249, 196);
-    letter-spacing: 1em;
-    font-size:xx-large;
-    position: absolute;
+#viande {
+  background-color: saddlebrown;
+  width: 45%;
+  height: 80px;
+  border-radius: 10px;
+  top: 190px;
+  z-index: 10;
 }
 
-button{
-    position: sticky;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    top : 0;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(13, 45, 94);
-    transition-delay: 0.5s;
-    border: none;
-    background: none;
-    z-index: 10;
+#saladeDeux {
+  top: 270px;
+  z-index: 10;
 }
 
-button:hover{
-    opacity: 1;
-    cursor: pointer;
+header p {
+  color: rgb(255, 249, 196);
+  letter-spacing: 1em;
+  font-size: xx-large;
+  position: absolute;
+  text-align: center;
 }
 
-.section{
-    display: none;
-    width: 100%;
-    height: 100vh;
-    z-index: 4;
-    position: relative;
+button {
+  position: sticky;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  font-family: "Pacifico", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: larger;
+  color: rgb(75, 4, 141);
+  transition-delay: 0.5s;
+  border: none;
+  background: none;
+  z-index: 10;
 }
 
-.sectionBlock{
-    display: block;
-    background-color: blueviolet;
-    width: 100%;
-    height: 100vh;
-    z-index: 4;
-    position: relative;
+#chapeau button {
+  font-size: x-large;
 }
 
-.sticky{
-    position: sticky;
+button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-#rubriqueUn{
-    background-color:turquoise;
+.section {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  position: relative;
 }
 
-#rubriqueDeux{
-    background-color: rgb(54, 206, 117);
+.sectionBlock {
+  display: block;
+  background-color: #8a2be2;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  position: relative;
 }
 
-#rubriqueTrois{
-    background-color: rgb(166, 209, 85);
+.sticky {
+  position: sticky;
 }
 
-#rubriqueQuatre{
-    background-color: rgb(235, 192, 75);
+/* #bienvenue {
+  background-color: turquoise;
 }
 
-#rubriqueCinq{
-    background-color: rgb(182, 88, 33);
+#parcours {
+  background-color: rgb(54, 206, 117);
 }
 
-#rubriqueSix{
-    background-color: rgb(155, 35, 101);
+#competences {
+  background-color: rgb(166, 209, 85);
 }
+
+#realisations {
+  background-color: rgb(235, 192, 75);
+}
+
+#contact {
+  background-color: rgb(182, 88, 33);
+}
+
+#liens {
+  background-color: rgb(155, 35, 101);
+} */
